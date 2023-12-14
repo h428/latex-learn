@@ -1,0 +1,24 @@
+\documentclass[UTF8]{ctexart} % 指定文档类型为 ctexart
+\usepackage{lipsum}  % 使用 lipsum 随机生成文本
+\usepackage{zhlipsum}  % zhlipsum 提供中文版 lipsum
+
+\title{测试综合性内容}  % 设置标题
+\author{马小跳\thanks{maxiaotiao@xmu.edu.cn}}  % 设置作者
+\date{2022年3月}  % 设置日期为编译当天
+
+
+\begin{document}  % 正文开始
+
+\maketitle  % 显示标题页，不加入这行，所有的 title, author 不会显示
+
+\section{第一节标题}  % 一级标题
+
+\lipsum[1-2]  % 生成 1 到 2 段文本
+
+\subsection{第一节下的子标题} % 二级标题
+\zhlipsum[3-4] % 生成 3 到 4 段中文文本
+
+\section{第二节标题}
+\lipsum[1-4][2-5] % 生成 5 到 6 段文本
+
+\end{document}
